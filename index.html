@@ -14,6 +14,9 @@
   <link rel="import"
     href="../components/core-toolbar/core-toolbar.html">
 
+  <link rel="import"
+    href="paper-calendar/paper-calendar.html">
+
 
   <style>
     html,body {
@@ -24,9 +27,9 @@
     }
     core-header-panel {
       height: 100%;
-      overflow: auto;
+/*      overflow: auto;
       -webkit-overflow-scrolling: touch; 
-    }
+*/    }
     core-toolbar {
       background: #2196F3;
       color: white;
@@ -44,8 +47,8 @@
   </style>
 </head>
 <body unresolved>
-  <core-header-panel>
-    <core-toolbar class="medium-tall">
+  <core-header-panel fullbleed mode="scroll">
+    <core-toolbar>
       <!-- 
       <paper-icon-button id="navicon" icon="menu"></paper-icon-button>
       --> 
@@ -56,8 +59,11 @@
       -->
     </core-toolbar>
     
-    <div class="container" layout vertical center>
-      <card-list show="about-me"></card-list>
+    <div class="container" fit layout horizontal center>
+      <!--Calendar setup -->
+      <paper-calendar flex>
+        <h2>Test</h2>
+      </paper-calendar>
     </div>
 
   </core-header-panel>
