@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <title>Lesson Board</title>
+  <meta name="viewport" 
+    content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <script src="../components/webcomponentsjs/webcomponents.js"></script>
+
+  <link rel="import" 
+    href="../components/font-roboto/roboto.html">
+  <link rel="import"
+    href="../components/core-header-panel/core-header-panel.html">
+  <link rel="import"
+    href="../components/core-toolbar/core-toolbar.html">
+
+
+  <style>
+    html,body {
+      height: 100%;
+      margin: 0;
+      background-color: #E5E5E5;
+      font-family: 'RobotoDraft', sans-serif;
+    }
+    core-header-panel {
+      height: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; 
+    }
+    core-toolbar {
+      background: #2196F3;
+      color: white;
+    }
+
+    .container {
+      width: 80%;
+      margin: 50px auto;
+    }
+    @media (min-width: 481px) {
+      .container {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body unresolved>
+  <core-header-panel>
+    <core-toolbar class="medium-tall">
+      <!-- 
+      <paper-icon-button id="navicon" icon="menu"></paper-icon-button>
+      --> 
+      <span flex>Lesson Board</span>
+      
+      <!-- 
+      <paper-icon-button id="morebutton" icon="more-vert"></paper-icon-button>
+      -->
+    </core-toolbar>
+    
+    <div class="container" layout vertical center>
+      <card-list show="about-me"></card-list>
+    </div>
+
+  </core-header-panel>
+
+</body>
+</html>
